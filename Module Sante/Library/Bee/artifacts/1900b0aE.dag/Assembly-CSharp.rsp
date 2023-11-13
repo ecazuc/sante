@@ -371,7 +371,6 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2023.1.16f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2023.1.16f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
-"Assets/Cube1.cs"
 "Assets/DornellLibrary/Scripts/BIM/BuildingData.cs"
 "Assets/DornellLibrary/Scripts/BIM/Locations.cs"
 "Assets/DornellLibrary/Scripts/Geography/GeodeticFrame.cs"
@@ -380,10 +379,11 @@
 "Assets/DornellLibrary/Scripts/Geography/Lambert.cs"
 "Assets/DornellLibrary/Scripts/Geography/MapData.cs"
 "Assets/DornellLibrary/Scripts/Misc/Geometry.cs"
-"Assets/Navigation.cs"
+"Assets/Scripts/Cube1.cs"
 "Assets/Scripts/Driver.cs"
+"Assets/Scripts/Navigation.cs"
+"Assets/Scripts/UserControl.cs"
 "Assets/Scripts/VibrationManager-minimal.cs"
-"Assets/UserControl.cs"
 -langversion:9.0
 
 /deterministic
