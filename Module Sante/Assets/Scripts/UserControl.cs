@@ -13,7 +13,6 @@ public class UserControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _isrbNotNull = _rb!=null;
         Cursor.lockState = CursorLockMode.Confined;
         _rb = GetComponent<Rigidbody>();
     }
@@ -24,12 +23,20 @@ public class UserControl : MonoBehaviour
     }
 
     private void FixedUpdate(){
-        if(_isrbNotNull){
+        if(_rb!=null){
             float dx = Mathf.Clamp(Input.GetAxis("Mouse X"),-1,1);
             float dy = Mathf.Clamp(Input.GetAxis("Mouse Y"),-1,1);
             this.transform.Rotate(Vector3.up,angularSpeed*Time.deltaTime*dx,Space.World);
             Vector3 moveDirection = Vector3.forward*dy;
             _rb.AddRelativeForce(moveDirection * (Time.fixedDeltaTime * forceGain));
+            if (Input.GetMouseButton(0))
+            {
+                this.transform.Translate(Vector3.left);
+            }
+            if (Input.GetMouseButton(1))
+            {
+                this.transform.Translate(Vector3.right);
+            }
         }
     }
 }
