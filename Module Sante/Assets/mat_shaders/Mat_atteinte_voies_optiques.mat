@@ -27,8 +27,8 @@ Material:
     m_Floats:
     - _BUILTIN_QueueControl: 0
     - _BUILTIN_QueueOffset: 0
-    - _fadewidth: 0.51
-    - _radius: 0.12
+    - _fadewidth: -0.1
+    - _radius: 0.58
     - _unilat_ral: 1
     m_Colors: []
   m_BuildTextureStacks: []
