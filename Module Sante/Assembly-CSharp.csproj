@@ -46,17 +46,17 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\DornellLibrary\Scripts\Geography\HeightMap.cs" />
+     <Compile Include="Assets\Scripts\Navigation.cs" />
      <Compile Include="Assets\DornellLibrary\Scripts\Geography\Lambert.cs" />
      <Compile Include="Assets\DornellLibrary\Scripts\BIM\BuildingData.cs" />
      <Compile Include="Assets\DornellLibrary\Scripts\Geography\IgnMnt.cs" />
-     <Compile Include="Assets\UserControl.cs" />
      <Compile Include="Assets\Scripts\VibrationManager-minimal.cs" />
-     <Compile Include="Assets\Navigation.cs" />
+     <Compile Include="Assets\Scripts\Cube1.cs" />
      <Compile Include="Assets\DornellLibrary\Scripts\Geography\GeodeticFrame.cs" />
      <Compile Include="Assets\DornellLibrary\Scripts\Misc\Geometry.cs" />
+     <Compile Include="Assets\Scripts\UserControl.cs" />
      <Compile Include="Assets\DornellLibrary\Scripts\Geography\MapData.cs" />
      <Compile Include="Assets\Scripts\Driver.cs" />
-     <Compile Include="Assets\Cube1.cs" />
      <Compile Include="Assets\DornellLibrary\Scripts\BIM\Locations.cs" />
      <Folder Include="Assets" />
      <Folder Include="Library\BuildInstructions" />
@@ -90,6 +90,7 @@
      <None Include="Library\PackageCache\com.unity.modules.tilemap@1.0.0\package.json" />
      <Folder Include="Library\PackageCache\com.unity.modules.assetbundle@1.0.0" />
      <None Include="Library\PackageCache\com.unity.timeline@1.8.2\package.json" />
+     <Folder Include="Assets\mat_shaders" />
      <Folder Include="Library\PackageCache\com.unity.visualscripting@1.8.0" />
      <None Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.21\ValidationConfig.json" />
      <None Include="Library\PackageCache\com.unity.modules.terrainphysics@1.0.0\package.json" />
@@ -480,13 +481,13 @@
      <HintPath>C:\Program Files\Unity\Hub\Editor\2023.1.16f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
      </Reference>
      <Reference Include="nunit.framework">
-     <HintPath>C:\Users\ewenc\Documents\INFO\GitHub\Module Sante\Library\PackageCache\com.unity.ext.nunit@2.0.3\net40\unity-custom\nunit.framework.dll</HintPath>
+     <HintPath>C:\Users\ewenc\Documents\INFO\GitHub\sante\Module Sante\Library\PackageCache\com.unity.ext.nunit@2.0.3\net40\unity-custom\nunit.framework.dll</HintPath>
      </Reference>
      <Reference Include="ReportGeneratorMerged">
-     <HintPath>C:\Users\ewenc\Documents\INFO\GitHub\Module Sante\Library\PackageCache\com.unity.testtools.codecoverage@1.2.4\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
+     <HintPath>C:\Users\ewenc\Documents\INFO\GitHub\sante\Module Sante\Library\PackageCache\com.unity.testtools.codecoverage@1.2.4\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-     <HintPath>C:\Users\ewenc\Documents\INFO\GitHub\Module Sante\Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+     <HintPath>C:\Users\ewenc\Documents\INFO\GitHub\sante\Module Sante\Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Android.Types">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2023.1.16f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>

@@ -8,16 +8,16 @@ using System;
 
 public class VibrationManager_minimal: MonoBehaviour
 {
-    public string devicePort = "COM4"; // Check which port is used on your system !
+    public string devicePort = "COM3"; // Check which port is used on your system !
     private Timer callbackTimer;
     private Driver driver;
     
     
     // Examples of values that can be edited in the inspector
-    public int vibrateTime_ms = 100;
+    public int vibrateTime_ms = 0;
     
     [Range(0,255)]
-    public float vibrateIntensity = 100.0f;
+    public float vibrateIntensity = 0.0f;
 
     public bool activeMotor1;
     public bool activeMotor2;
@@ -103,6 +103,100 @@ public class VibrationManager_minimal: MonoBehaviour
             Driver.EndMarker });
         await Task.Delay(vibrateTime_ms); // in ms, but Unity Time.time is in s
     }
+
+    public void avance()
+    {
+        vibrationSequence = new List<Sequence>();
+        vibrationSequence.Add(new Sequence(0, 140, 140, 0));
+        vibrateTime_ms = 200;
+        startSequence();
+    }
+    
+    public void droite()
+    {
+        vibrationSequence = new List<Sequence>();
+        vibrationSequence.Add(new Sequence(0, 0, 140, 140));
+        vibrateTime_ms = 200;
+        startSequence();
+    }
+    
+    public void gauche()
+    {
+        vibrationSequence = new List<Sequence>();
+        vibrationSequence.Add(new Sequence(140, 140, 0, 0));
+        vibrateTime_ms = 200;
+        startSequence();
+    }
+    
+    public void recule()
+    {
+        vibrationSequence = new List<Sequence>();
+        vibrationSequence.Add(new Sequence(140, 0, 0, 140));
+        vibrationSequence.Add(new Sequence(0, 140, 140, 0));
+        vibrationSequence.Add(new Sequence(140, 0, 0, 140));
+        vibrationSequence.Add(new Sequence(0, 140, 140, 0));
+        vibrateTime_ms = 200;
+        startSequence();
+    }
+
+    public void obstacleGauche()
+    {
+        vibrationSequence = new List<Sequence>();
+        vibrationSequence.Add(new Sequence(140, 0, 0, 0));
+        vibrateTime_ms = 200;
+        startSequence();
+    }
+
+    public void obstacleDroite()
+    {
+        vibrationSequence = new List<Sequence>();
+        vibrationSequence.Add(new Sequence(0, 0, 0, 140));
+        vibrateTime_ms = 200;
+        startSequence();
+    }
+
+    public void tourne_droite()
+    {
+        vibrationSequence = new List<Sequence>();
+        vibrationSequence.Add(new Sequence(0, 0, 140, 0));
+        vibrationSequence.Add(new Sequence(0, 0, 0, 140));
+        vibrateTime_ms = 200;
+        startSequence();
+    }
+    public void tourne_gauche()
+    {
+        vibrationSequence = new List<Sequence>();
+        vibrationSequence.Add(new Sequence(0, 140, 0, 0));
+        vibrationSequence.Add(new Sequence(140, 0, 0, 0));
+        vibrateTime_ms = 200;
+        startSequence();
+    }
+    public void succes()
+    {
+        vibrationSequence = new List<Sequence>();
+        vibrationSequence.Add(new Sequence(140, 0, 0, 0));
+        vibrationSequence.Add(new Sequence(0, 140, 0, 0));
+        vibrationSequence.Add(new Sequence(0, 0, 140, 0));
+        vibrationSequence.Add(new Sequence(0, 0, 0, 140));
+        vibrationSequence.Add(new Sequence(0, 0, 0, 140));
+        vibrationSequence.Add(new Sequence(0, 0, 140, 0));
+        vibrationSequence.Add(new Sequence(0, 140, 0, 0));
+        vibrationSequence.Add(new Sequence(140, 0, 0, 0));
+        vibrateTime_ms = 100;
+        startSequence();
+    }
+    
+    public void echec()
+    {
+        vibrationSequence = new List<Sequence>();
+        vibrationSequence.Add(new Sequence(140, 140, 140, 140));
+        vibrateTime_ms = 200;
+        startSequence();
+    }
+    
+    
+    
+    
 }
 
 [Serializable]
@@ -162,5 +256,35 @@ public class VibrationManagerEditor : Editor
 
         // Button example
         if (GUILayout.Button("Vibrate sequence")) instance.startSequence();
+        
+        //Button avance
+        if (GUILayout.Button("Avance")) instance.avance();
+        
+        //Button droite
+        if (GUILayout.Button("Droite")) instance.droite();
+        
+        //Button gauche
+        if (GUILayout.Button("Gauche")) instance.gauche();
+        
+        //Button recule
+        if (GUILayout.Button("Recule")) instance.recule();
+        
+        //Button obstacle gauche
+        if (GUILayout.Button("Obstacle gauche")) instance.obstacleGauche();
+        
+        //Button obstacle droite
+        if (GUILayout.Button("Obstacle droite")) instance.obstacleDroite();
+        
+        //Button tourne droite
+        if (GUILayout.Button("Tourne droite")) instance.tourne_droite();
+        
+        //Button tourne gauche
+        if (GUILayout.Button("Tourne Gauche")) instance.tourne_gauche();
+        
+        //Button succes
+        if (GUILayout.Button("Succès")) instance.succes();
+        
+        //Button echec
+        if (GUILayout.Button("Echec")) instance.echec();
     }
 }
