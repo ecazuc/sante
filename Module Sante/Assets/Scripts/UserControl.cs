@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class UserControl : MonoBehaviour
 {
-    public float linearSpeed = 1;
+    public float linearSpeed =1;
     public float angularSpeed = 90;
     private Rigidbody _rb;
     public float forceGain = 100000;
@@ -27,8 +27,9 @@ public class UserControl : MonoBehaviour
             float dx = Mathf.Clamp(Input.GetAxis("Mouse X"),-1,1);
             float dy = Mathf.Clamp(Input.GetAxis("Mouse Y"),-1,1);
             this.transform.Rotate(Vector3.up,angularSpeed*Time.deltaTime*dx,Space.World);
-            Vector3 moveDirection = Vector3.forward*dy;
-            _rb.AddRelativeForce(moveDirection * (Time.fixedDeltaTime * forceGain));
+            Vector3 moveDirection = Vector3.forward;
+            this.transform.Translate(moveDirection*Input.mouseScrollDelta.y*linearSpeed);
+            //_rb.AddRelativeForce(moveDirection * (Time.fixedDeltaTime * forceGain));
             if (Input.GetMouseButton(0))
             {
                 this.transform.Translate(Vector3.left);
@@ -36,6 +37,11 @@ public class UserControl : MonoBehaviour
             if (Input.GetMouseButton(1))
             {
                 this.transform.Translate(Vector3.right);
+            }
+
+            if (Input.GetMouseButton(2))
+            {
+                this.transform.Translate(Vector3.up);
             }
         }
     }

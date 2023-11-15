@@ -87,7 +87,7 @@ namespace Dornell.BIM {
                     submeshStart += submesh.nIndices;
                     ++submeshIndex;
                 }
-
+                goNode.AddComponent<MeshCollider>().sharedMesh = mesh;
                 goNode.AddComponent<MeshRenderer>().sharedMaterials = materials;
                 if (!BuildingData.includeNormals)
                     mesh.RecalculateNormals();
