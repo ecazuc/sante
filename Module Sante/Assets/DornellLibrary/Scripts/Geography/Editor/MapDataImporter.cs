@@ -83,7 +83,7 @@ namespace Dornell.Geography {
                             CreateTree(node, trees.transform, treePrefab);
                         }
                     } else {
-                        Debug.LogError($"Unable to find tree model {treeModelName}");
+                        //Debug.LogError($"Unable to find tree model {treeModelName}");
                     }
                 }
 

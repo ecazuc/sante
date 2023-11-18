@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1313,9 +1313,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1be1f93162418e147af2cdf0803f994c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  linearSpeed: 1
-  angularSpeed: 200
-  forceGain: 100000
+  linearSpeed: 5
+  angularSpeed: 180
+  forceGain: 50000
 --- !u!136 &1402288324
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1336,7 +1336,7 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.4
-  m_Height: 1.9
+  m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.00000005960464, y: 0, z: -0.00000008940697}
 --- !u!23 &1402288325
@@ -1466,7 +1466,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4de05969d6f048188e7b2cbd90390b79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  devicePort: COM3
+  devicePort: COM4
   vibrateTime_ms: 100
   vibrateIntensity: 100
   activeMotor1: 0
@@ -1507,7 +1507,7 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
-  m_Height: 1.8
+  m_Height: 1.5
   m_Direction: 1
   m_Center: {x: 0.5, y: 0, z: -0.00000008940697}
 --- !u!136 &1402288333
@@ -1530,7 +1530,7 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
-  m_Height: 1.8
+  m_Height: 1.5
   m_Direction: 1
   m_Center: {x: -0.5, y: 0, z: -0.00000008940697}
 --- !u!1 &1515410926

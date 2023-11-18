@@ -8,7 +8,7 @@ using System;
 
 public class VibrationManager_minimal: MonoBehaviour
 {
-    public string devicePort = "COM3"; // Check which port is used on your system !
+    public string devicePort = "COM4"; // Check which port is used on your system !
     private Timer callbackTimer;
     private Driver driver;
     
