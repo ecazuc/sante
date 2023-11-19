@@ -17,7 +17,7 @@ public class Navigation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(_n<9 && Vector3.Distance(transform.position, waypoints[_n-1].transform.position)<3){
+        if(_n<10 && Vector3.Distance(transform.position, waypoints[_n-1].transform.position)<3){
             Debug.Log("Point n°" + _n + " proche !");
             deplacement(_n);
             _n++;
@@ -63,14 +63,17 @@ public class Navigation : MonoBehaviour
                 Debug.Log("Tourne a gauche");
                 break;
             case 7:
-                vb.avance();
-                Debug.Log("Avance");
+                vb.tourne_gauche();
+                Debug.Log("Tourne a gauche");
                 break;
             case 8:
+                vb.tourne_droite();
+                Debug.Log("Tourne a droite");
+                break;
+            case 9:
                 vb.succes();
                 Debug.Log("Succes");
                 break;
-
         }
             
     }
