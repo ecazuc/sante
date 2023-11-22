@@ -7,6 +7,7 @@ public class Navigation : MonoBehaviour
     public List<GameObject> waypoints;
     private int _n=1;
     public VibrationManager_minimal vb;
+    public int counter=0;
 
 
     // Start is called before the first frame update
@@ -75,6 +76,7 @@ public class Navigation : MonoBehaviour
                 Debug.Log("Succes");
                 break;
         }
+        this.counter++;
             
     }
 }

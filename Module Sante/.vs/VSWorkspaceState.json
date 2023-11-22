@@ -2,11 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\Assets",
-    "\\Assets\\DornellLibrary",
-    "\\Assets\\DornellLibrary\\Scripts",
-    "\\Assets\\DornellLibrary\\Scripts\\Geography",
-    "\\Assets\\DornellLibrary\\Scripts\\Geography\\Editor",
     "\\Assets\\Scripts"
   ],
+  "SelectedNode": "\\Assets\\Scripts\\Navigation.cs",
   "PreviewInSolutionExplorer": false
 }

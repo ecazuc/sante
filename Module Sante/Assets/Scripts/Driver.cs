@@ -125,8 +125,8 @@ namespace hapticDriver
         // Suivi de message sur la console
         public void ShowMessage()
         {
-            if (verbose)
-                Debug.Log("Message: " + message[0] + " " + message[1] + " " + message[2] + " " + message[3]);
+            //if (verbose)
+                //Debug.Log("Message: " + message[0] + " " + message[1] + " " + message[2] + " " + message[3]);
         }
     }
 }

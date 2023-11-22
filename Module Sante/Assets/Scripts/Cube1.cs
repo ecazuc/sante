@@ -34,10 +34,10 @@ public class Cube1 : MonoBehaviour
         Vector3 pos = collision.ClosestPointOnBounds(this.transform.position);
         Vector3 pointLocal = transform.InverseTransformPoint(pos);
         if(pointLocal.x < 0){
-            Debug.Log("Obs gauche");
+            //Debug.Log("Obs gauche");
             this.moteurs.obstacleGauche();
         }else{
-            Debug.Log("Obs droite");
+            //Debug.Log("Obs droite");
             this.moteurs.obstacleDroite();
         }
     }

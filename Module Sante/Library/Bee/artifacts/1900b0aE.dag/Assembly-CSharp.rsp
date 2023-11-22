@@ -379,9 +379,12 @@
 "Assets/DornellLibrary/Scripts/Geography/Lambert.cs"
 "Assets/DornellLibrary/Scripts/Geography/MapData.cs"
 "Assets/DornellLibrary/Scripts/Misc/Geometry.cs"
+"Assets/Scripts/CollisionCounter.cs"
+"Assets/Scripts/CsvWriter.cs"
 "Assets/Scripts/Cube1.cs"
 "Assets/Scripts/Driver.cs"
 "Assets/Scripts/Navigation.cs"
+"Assets/Scripts/TestLog.cs"
 "Assets/Scripts/UserControl.cs"
 "Assets/Scripts/VibrationManager-minimal.cs"
 -langversion:9.0

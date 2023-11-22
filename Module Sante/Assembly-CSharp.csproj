@@ -61,7 +61,10 @@
     <Compile Include="Assets\DornellLibrary\Scripts\Geography\HeightMap.cs" />
     <Compile Include="Assets\Scripts\Navigation.cs" />
     <Compile Include="Assets\DornellLibrary\Scripts\Geography\Lambert.cs" />
+    <Compile Include="Assets\Scripts\TestLog.cs" />
     <Compile Include="Assets\DornellLibrary\Scripts\BIM\BuildingData.cs" />
+    <Compile Include="Assets\Scripts\CollisionCounter.cs" />
+    <Compile Include="Assets\Scripts\CsvWriter.cs" />
     <Compile Include="Assets\DornellLibrary\Scripts\Geography\IgnMnt.cs" />
     <Compile Include="Assets\Scripts\VibrationManager-minimal.cs" />
     <Compile Include="Assets\Scripts\Cube1.cs" />
