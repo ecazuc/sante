@@ -13,6 +13,10 @@ public class Navigation : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (menu.mode)
+        {
+            this.transform.position = waypoints[8].transform.position;
+        }
     }
 
     // Update is called once per frame
