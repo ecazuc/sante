@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1298,7 +1298,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 896a10f5b9c6e554484ea027af082e76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collisionCounter: 0
 --- !u!136 &1395599873
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1334,8 +1333,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 794e33e6eeae9414aba102c8cef3b423, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collisionCounter: {fileID: 1395599872}
-  navigation: {fileID: 1402288329}
 --- !u!1 &1396918564
 GameObject:
   m_ObjectHideFlags: 0
@@ -1461,6 +1458,7 @@ GameObject:
   - component: {fileID: 1402288331}
   - component: {fileID: 1402288333}
   - component: {fileID: 1402288332}
+  - component: {fileID: 1402288334}
   m_Layer: 0
   m_Name: avatar
   m_TagString: Untagged
@@ -1703,6 +1701,21 @@ CapsuleCollider:
   m_Height: 1.5
   m_Direction: 1
   m_Center: {x: -0.5, y: 0, z: -0.00000008940697}
+--- !u!114 &1402288334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402288322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3a126ad928ab7349a4aac2a2ce82e12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  path: /Resources/
+  filename: expe
+  idUsager: 2
 --- !u!1 &1515410926
 GameObject:
   m_ObjectHideFlags: 0
@@ -2213,7 +2226,7 @@ Transform:
   m_GameObject: {fileID: 1908789304}
   serializedVersion: 2
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: -212.5, y: 3, z: 0}
+  m_LocalPosition: {x: -177.7, y: 134.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

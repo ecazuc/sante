@@ -9,6 +9,8 @@ public class menu : MonoBehaviour
 {
     public Button guidButton;
     public Button libreButton;
+    public TMP_InputField inputField;
+    public static string idUsager;
     public static bool mode;
     
     // Start is called before the first frame update
@@ -31,17 +33,10 @@ public class menu : MonoBehaviour
             mode = true;
             Debug.Log("Libre");
         }
+        idUsager = inputField.text;
+        Debug.Log(string.Format("IdUsager : " + idUsager));
         SceneManager.LoadScene("TP5");
         Debug.Log("Chargement de la scène");
     }
 
-    public void guide()
-    {
-        mode = false;
-        Debug.Log("Guidé");
-        SceneManager.LoadScene("TP5");
-        Debug.Log("Chargement de la scène");
-    }
-
-    
 }

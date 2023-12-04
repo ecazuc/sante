@@ -50,7 +50,6 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
      <Compile Include="Assets\Scripts\Navigation.cs" />
      <Compile Include="Assets\DornellLibrary\Scripts\Geography\Lambert.cs" />
-     <Compile Include="Assets\Scripts\TestLog.cs" />
      <Compile Include="Assets\DornellLibrary\Scripts\BIM\BuildingData.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
      <Compile Include="Assets\Scripts\CollisionCounter.cs" />
@@ -94,7 +93,6 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
-     <Compile Include="Assets\Scripts\LoadScene.cs" />
      <Compile Include="Assets\DornellLibrary\Scripts\BIM\Locations.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
      <Folder Include="Assets" />
@@ -248,6 +246,7 @@
      <Folder Include="Assets\INSA\Meshes" />
      <Folder Include="Assets\TextMesh Pro\Examples &amp; Extras\Prefabs" />
      <None Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Editor Resources\Shaders\TMP_SDF_SSD.cginc" />
+     <Folder Include="Assets\Resources" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.1.0\ValidationConfig.json" />
      <Folder Include="Assets\TextMesh Pro\Examples &amp; Extras\Scenes" />
      <Folder Include="Library\PackageCache\com.unity.modules.vehicles@1.0.0" />

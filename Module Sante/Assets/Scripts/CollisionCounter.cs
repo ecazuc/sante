@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CollisionCounter : MonoBehaviour
 {
-    public int collisionCounter = 0;
+    public static int collisionCounter = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -18,9 +18,9 @@ public class CollisionCounter : MonoBehaviour
         
     }
 
-    public void OnTriggerEnter(Collider collision){
-        this.collisionCounter = this.collisionCounter + 1;
-        Debug.Log("Nb collisions : " + this.collisionCounter);
+    public static void OnTriggerEnter(Collider collision){
+        collisionCounter = collisionCounter + 1;
+        Debug.Log("Nb collisions : " + collisionCounter);
 
     }
 }

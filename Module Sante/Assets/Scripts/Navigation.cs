@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 public class Navigation : MonoBehaviour
@@ -8,6 +9,9 @@ public class Navigation : MonoBehaviour
     private int _n=1;
     public VibrationManager_minimal vb;
     public int counter=0;
+    private long _timeDeb;
+    public static long timeTotal;
+    public static bool succes = false;
 
 
     // Start is called before the first frame update
@@ -17,6 +21,8 @@ public class Navigation : MonoBehaviour
         {
             this.transform.position = waypoints[8].transform.position;
         }
+
+        //light.transform.position = new Vector3(-210, 3, 0);
     }
 
     // Update is called once per frame
@@ -45,6 +51,7 @@ public class Navigation : MonoBehaviour
         {
             case 1:
                 vb.avance();
+                _timeDeb = System.DateTime.Now.Ticks;
                 Debug.Log("Avance");
                 break;
             case 2:
@@ -77,7 +84,10 @@ public class Navigation : MonoBehaviour
                 break;
             case 9:
                 vb.succes();
+                timeTotal = System.DateTime.Now.Ticks - _timeDeb;
                 Debug.Log("Succes");
+                Debug.Log("Temps total : " + timeTotal);
+                succes = true;
                 break;
         }
         this.counter++;
