@@ -11,6 +11,7 @@ public class CsvWriter : MonoBehaviour
      public string path = "/Resources/";
      public string filename = "expe";
      public int idUsager = 1;
+     public CollisionCounter colCounter;
      
      StringBuilder sb = new System.Text.StringBuilder();
 
@@ -50,7 +51,7 @@ public class CsvWriter : MonoBehaviour
                     //menu.idUsager,
                     "Succes",
                     Navigation.timeTotal.ToString(),
-                    CollisionCounter.collisionCounter.ToString()
+                    this.colCounter.collisionCounter.ToString()
                });
           }
           else
@@ -61,7 +62,7 @@ public class CsvWriter : MonoBehaviour
                     //menu.idUsager,
                     "Echec",
                     "-1",
-                    CollisionCounter.collisionCounter.ToString()
+                    this.colCounter.collisionCounter.ToString()
                });
           }
      }

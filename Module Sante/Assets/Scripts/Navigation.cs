@@ -84,7 +84,7 @@ public class Navigation : MonoBehaviour
                 break;
             case 9:
                 vb.succes();
-                timeTotal = System.DateTime.Now.Ticks - _timeDeb;
+                timeTotal = (System.DateTime.Now.Ticks - _timeDeb)/10000000;
                 Debug.Log("Succes");
                 Debug.Log("Temps total : " + timeTotal);
                 succes = true;
