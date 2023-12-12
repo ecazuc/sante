@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 792a21f877a08e847a74556ed5386d34
   - enabled: 1
-    path: Assets/Scenes/TP5.unity
+    path: Assets/Scenes/scenario_evaluation.unity
     guid: 56f5b84bdd7e6bc41b1e225cd1708119
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

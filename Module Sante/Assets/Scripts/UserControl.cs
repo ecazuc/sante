@@ -16,12 +16,7 @@ public class UserControl : MonoBehaviour
         Cursor.lockState = CursorLockMode.Confined;
         _rb = GetComponent<Rigidbody>();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-    }
-
+    
     private void FixedUpdate(){
         if(_rb!=null){
             float dx = Mathf.Clamp(Input.GetAxis("Mouse X"),-1,1);
@@ -31,13 +26,13 @@ public class UserControl : MonoBehaviour
             //this.transform.Translate(moveDirection*Input.mouseScrollDelta.y*linearSpeed);
             //_rb.AddRelativeForce(moveDirection * (Time.fixedDeltaTime * forceGain));
 
-            // click gauche pour un pas à gauche
+            // click gauche pour un pas ï¿½ gauche
             if (Input.GetMouseButton(0))
             {
                 _rb.AddRelativeForce(Vector3.left*Time.fixedDeltaTime*forceGain);
             }
 
-            // click droit pour un pas à droite
+            // click droit pour un pas ï¿½ droite
             if (Input.GetMouseButton(1))
             {
                 _rb.AddRelativeForce(Vector3.right*Time.fixedDeltaTime*forceGain);
@@ -49,7 +44,7 @@ public class UserControl : MonoBehaviour
                 _rb.AddRelativeForce(Vector3.forward*Time.fixedDeltaTime*forceGain);
             }
             
-            // molette vers le haut pour un pas en avant ou molette vers le bas pour un pas en arrière
+            // molette vers le haut pour un pas en avant ou molette vers le bas pour un pas en arriï¿½re
             _rb.AddRelativeForce(Vector3.forward*Input.mouseScrollDelta.y*linearSpeed*Time.fixedDeltaTime*forceGain);
         }
     }
