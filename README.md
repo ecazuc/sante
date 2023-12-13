@@ -1,4 +1,4 @@
-Module Santé 2023
+<h2>Module Santé 2023</h2>
 
 Groupe n°1, étudiants : 
 Cazuc Ewen
