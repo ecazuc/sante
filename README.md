@@ -1,7 +1,7 @@
 <h2>Module Santé 2023</h2>
 
-Groupe n°1, étudiants : 
-Cazuc Ewen
+Groupe n°1, étudiants :<br>
+Cazuc Ewen<br>
 Le Boulaire Erwan
 
 Version de Unity : 2023.1.16f1
@@ -19,7 +19,7 @@ Scripts :
 - UserControl → définit les contrôles de l’utilisateur en jeu
 - VibrationManager → définit les vibrations possibles des moteurs (schémas haptiques)
 
-Simuler une déficience visuelle : 
+Simuler une déficience visuelle :<br>
 Donner un des 3 shaders suivants à l’objet utilisateur/MainCamera/deficience_visuelle (dans le champ Materials du composant Mesh Renderer) : 
 - Mat_atteinte_vision_centrale → atteinte de la vision centrale
 - Mat_atteinte_voies_optiques → atteinte des voies optiques
@@ -32,7 +32,7 @@ S’équiper du dispositif :
 - moteur bleu → index droit (3)
 - moteur marron → auriculaire droit (4)
 
-Schémas haptiques en jeu (cf diapo pour des illustrations) : 
+Schémas haptiques en jeu (cf diapo pour des illustrations) :<br>
 (&& = en même temps, / = puis)
 - Avance : (2)&&(3)
 - Fait un pas sur la droite : (3)&&(4)
@@ -59,10 +59,10 @@ Scénario d’évaluation :
 	- Arrivée : dans le hall, devant la porte principale du bâtiment informatique (pour passer la marche, faire un détour par l’herbe sur la gauche du hall, puis rejoindre le hall en longeant le mur, le succès vous y attend)
 - Partie libre : se déplacer librement dans les couloirs du bâtiment informatique avec détection des obstacles
 	- Départ : avant le lancement du test, déplacer l’utilisateur dans le hall
-	- Limite de temps : 1 minute max
-[ Une partie du scénario d’évaluation doit correspondre à un lancement du jeu (exemple : lancement du jeu > partie guidée > arrêt du jeu, puis, lancement du jeu > partie libre > arrêt du jeu) ]
+	- Limite de temps : 1 minute max <br>
+ [ Une partie du scénario d’évaluation doit correspondre à un lancement du jeu (exemple : lancement du jeu > partie guidée > arrêt du jeu, puis, lancement du jeu > partie libre > arrêt du jeu) ]
 
-Récupération des données du jeu dans le fichier Assets/Resources/expe.csv .
+Récupération des données du jeu dans le fichier Assets/Resources/expe.csv. <br>
 On y trouve : 
 - l’identifiant du test
 - ‘Succes’ ou ‘Echec’ si l’utilisateur est parvenu au bout de la partie guidée
